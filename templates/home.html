@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Big Mart Sales Prediction</h1>
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+      <input type="text" name="Item_Weight" placeholder="Item_Weight" required="required" /><br>
+    	<input type="text" name="Item_Fat_Content" placeholder="Item_Fat_Content" required="required" /><br>
+        <input type="text" name="Item_Visibility" placeholder="Item_Visibility" required="required" /><br>
+        <input type="text" name="Item_Type" placeholder="Item_Type" required="required" /><br>
+        <input type="text" name="Item_MRP" placeholder="Item_MRP" required="required" /><br>
+        <input type="text" name="Outlet_Establishment_Year" placeholder="Outlet_Establishment_Year" required="required" /><br>
+        <input type="text" name="Outlet_Size" placeholder="Outlet_Size" required="required" /><br>
+        <input type="text" name="Outlet_Location_Type" placeholder="Outlet_Location_Type" required="required" /><br>
+        <input type="text" name="Outlet_Type" placeholder="Outlet_Type" required="required" /><br>
+        
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>
